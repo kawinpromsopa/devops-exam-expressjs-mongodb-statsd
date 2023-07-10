@@ -8,25 +8,24 @@ To install it, simply fork this repository and create an application from your G
 
 That's it, the application will use the environnement variables to connect to MongoDB.
 
-### Docker image
-1. Fork github repo: https://github.com/kawinpromsopa/devops-exam-expressjs-mongodb-statsd.git
-2. Create Dockerfile to build your own image.
+### Containerize
+1. Create Dockerfile to build your own image.
 
-### Provision
-3. Write script any tools to provision 2 servers
+### Provisioning
+2. Write Infrastructure as a Code (IaC) any tools to provision 2 servers
 
 #### Application server
-4. Setup server to be able to run docker container
-5. Setup environment as follows
+3. Setup server to be able to run container
+4. Setup environment as follows
 	- MONGODB_ADDON_URI=mongodb://<database_server>:27017/test
 	- PORT=3000
-6. Run application using command "npm start"
+5. Run application using command "npm start"
 
 #### Database server
-7. Setup MongoDB using docker
-8. Setup security to allow only application server to access database
+6. Setup MongoDB using container
+7. Setup security to allow only application server to access database
 
-### **Bonus** DevOps pipelines / GitOps
-9. Setup Jenkins server and create 2 pipelines
-	- Build docker image
-	- Deploy to server
+### **Bonus** DevOps pipelines
+8. Setup any tools and create 2 pipelines
+	- Build containerize
+	- Deployment
