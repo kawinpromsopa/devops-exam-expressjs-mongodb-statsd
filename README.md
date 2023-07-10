@@ -16,16 +16,19 @@ That's it, the application will use the environnement variables to connect to Mo
 
 ### Application server
 3. Setup server to be able to run container
-4. Setup environment as follows
-	- MONGODB_ADDON_URI=mongodb://<database_server>:27017/test
-	- PORT=3000
-5. Run application using command "npm start"
+4. Setup environment variables as follows
+```
+MONGODB_ADDON_URI=mongodb://<database_server>:27017/test
+PORT=3000
+
+```
+5. Run application using command `npm start`
 
 ### Database server
 6. Setup MongoDB using container
 7. Setup security to allow only application server to access database
 
-### [Optional] Worklow Pipelines
+### [Optional] Workflow Pipelines
 8. Setup any tools and create 2 stages
 	- Build containerize
 	- Deployment
